@@ -44,7 +44,7 @@
         // takes an array and return a new array with same amount given
         // 2. Give us an array of the inventors first and last names
         const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
-        console.log(fullNames);
+        console.table(fullNames);
         // Array.prototype.sort()
         // 3. Sort the inventors by birthdate, oldest to youngest
         // const ordered = inventors.sort(function (firstPerson, secondPerson) {
@@ -69,7 +69,7 @@
             return total + (inventor.passed - inventor.year);
             // first time is undefined so 0 is included
         }, 0)
-        console.log(totalYears)
+        console.table(totalYears)
         // 5. Sort the inventors by years lived
         const oldest = inventors.sort(function (a, b) {
             const lastGuy = a.passed - a.year;
@@ -97,7 +97,7 @@
             return aLast > bLast ? 1 : -1;
             // console.log(parts);
         })
-        console.log(alpha);
+        console.table(alpha);
         // 8. Reduce Exercise
         // Sum up the instances of each of these
         const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck', 'pogostick'];
@@ -112,7 +112,7 @@
 
             // start with empty object then loop
         }, {})
-        console.log(transportation)
+        console.table(transportation)
     </script>
 </body>
 
